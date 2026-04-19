@@ -1,0 +1,13 @@
+Flask>=3.0.0
+flask-cors>=4.0.0
+mediapipe>=0.10.30
+opencv-python-headless>=4.8.1.78
+Pillow>=10.1.0
+deepface>=0.0.79
+moviepy>=1.0.3
+pydub>=0.25.1
+numpy>=1.26.1
+deep-translator>=1.11.4
+mysql-connector-python>=8.0.33
+tf-keras>=2.21.0
+python-dotenv>=1.0.0

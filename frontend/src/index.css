@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-premium-light: #f8fafc;
+  --color-premium-dark: #0f172a;
+  --color-premium-accent: #6366f1;
+  
+  --color-emotion-positive: #22c55e;
+  --color-emotion-neutral: #64748b;
+  --color-emotion-negative: #ef4444;
+
+  --animate-pulse-slow: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 min-h-screen antialiased;
+    margin: 0;
+    display: block;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+}
+
+.refined-card {
+  @apply bg-white rounded-[32px] shadow-[0_8px_30px_rgba(0,0,0,0.04)] border border-gray-100 overflow-hidden;
+}
+
+.input-field {
+  @apply w-full bg-[#EFF3F9] border-none rounded-2xl px-5 py-4 outline-none focus:ring-2 focus:ring-indigo-500/20 transition-all text-[#111827] placeholder:text-gray-400;
+}
+
+.primary-button {
+  @apply w-full bg-[#111827] hover:bg-[#1F2937] text-white font-bold py-4 rounded-2xl transition-all flex items-center justify-center gap-2 shadow-lg shadow-black/10;
+}
+
+.secondary-button {
+  @apply bg-white hover:bg-gray-50 text-[#111827] border border-gray-200 font-bold py-3 px-6 rounded-2xl transition-all flex items-center justify-center gap-2;
+}
+
+.accent-text {
+  @apply text-indigo-600;
+}
